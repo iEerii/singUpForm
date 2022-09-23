@@ -32,7 +32,6 @@ body {
 .wrapper__letter {
     color: white;
     margin-top: 90px;
-    padding: 35px;
     width: 49%;
 }
 
@@ -123,11 +122,17 @@ body {
     box-shadow: 0px 7px 0px -3px rgba(46,171,117,1);
 }
 
-@media all and (min-width: 375px) {
+@media all and (max-width: 768px) {
+    
+    .container{
+        overflow: scroll;
+    }
+
     .wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-bottom: 30px;
         padding-left: 28px;
         width: 300px;
     }
@@ -150,5 +155,9 @@ body {
 
     .wrapper__form {
         width: 90%;
+    }
+
+    .wrapper__form-field button {
+        font-size: 12px;
     }
 }
